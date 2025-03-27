@@ -6,6 +6,6 @@ on: workflow_dispatch
 jobs:
   PrintHelloWorld:
     name: Print Hello, World!
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps: 
     - run: echo "Hello, World!"
