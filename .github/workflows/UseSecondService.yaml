@@ -1,0 +1,11 @@
+name: Hello, World - Use a second service
+ 
+# Controls when the workflow will run, in this case manually
+on: workflow_dispatch
+
+jobs:
+  PrintHelloWorld:
+    name: Print Hello, World!
+    runs-on: [self-hosted, dbDeploymnents]
+    steps: 
+    - run: echo "Hello, World!"
